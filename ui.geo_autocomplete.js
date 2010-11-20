@@ -1,5 +1,5 @@
 /*
- * jQuery geo_autocomplete plugin 2.0.1
+ * jQuery geo_autocomplete plugin 2.1.1
  *
  * Copyright (c) 2010 Bob Hitching
  *
@@ -13,7 +13,7 @@
 $.widget( "ui.geo_autocomplete", {
 	// setup the element as an autocomplete widget with some geo goodness added
 	_init: function() {
-		this.options._geocoder = new google.maps.Geocoder, // geocoder object
+		this.options._geocoder = new google.maps.Geocoder; // geocoder object
 		this.options._cache = {}; // cache of geocoder responses
 		this.element.autocomplete(this.options);
 		
